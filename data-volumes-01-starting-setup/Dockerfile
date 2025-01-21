@@ -8,6 +8,8 @@ COPY . /app
 
 RUN npm install
 
-EXPOSE 80
+ENV PORT 80
+
+EXPOSE ${PORT}
 
 CMD [ "start", "start" ]
